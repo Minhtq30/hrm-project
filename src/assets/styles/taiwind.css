@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .sub-dropdown:hover > .sub-dropdown-content {
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+  }
+  .form-group-label {
+    font-size: 0.95em;
+    color: #666;
+    white-space: nowrap;
+    align-items: center;
+    text-overflow: ellipsis;
+    display: inline-flex;
+    margin-bottom: 4px;
+  }
+  .form-xs-small {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  .form-mid-xs-small {
+    width: 100px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  .form-mid-small {
+    width: 160px;
+    margin-bottom: 10px;
+  }
+  .form-x-small {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  .form-extra-small {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .form-small {
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  .form-large {
+    width: 800px;
+    margin-bottom: 10px;
+  }
+  .form-large-plus {
+    min-width: 1000px;
+    margin-bottom: 10px;
+  }
+  .form-plus {
+    min-width: 1500px;
+    margin-bottom: 10px;
+  }
+  .form-supper-plus {
+    min-width: 2500px;
+    margin-bottom: 10px;
+  }
+}
+@layer components {
+  .sub-item {
+    @apply p-[10px] hover:bg-slate-200/70 rounded-lg text-left text-black text-sm;
+  }
+  .app-item {
+    @apply hover:bg-slate-200;
+  }
+  .primary-sidebar {
+    @apply text-white mt-4 space-y-6 inset-y-0 left-0 relative -translate-x-0 transform transition duration-200 ease-in-out;
+  }
+  .form-section-content {
+    @apply flex flex-col py-3;
+  }
+  .form-group {
+    @apply mb-3;
+  }
+  .format-radio {
+    @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  }
+  .cellTable {
+    @apply p-3 text-left;
+  }
+  .text-setting {
+    @apply text-sm font-bold text-[#050505] text-left;
+  }
+  .sub-setting {
+    @apply text-sm text-left text-[#777777] mt-2;
+  }
+  .row-setting {
+    @apply flex justify-between items-center p-2 hover:bg-slate-50;
+  }
+  .activeSidebar {
+    @apply bg-white/20;
+  }
+  .socialCompanyNotice {
+    @apply p-2 flex items-center hover:bg-slate-50 hover:rounded-lg cursor-pointer;
+  }
+  /* Start Table Timekeep */
+  .headerTableTimekeepZ10 {
+    @apply border sticky top-0 px-6 bg-white z-10;
+  }
+  .headerTableTimekeepZ7 {
+    @apply border sticky top-0 px-6 bg-white z-[7];
+  }
+  .headerTableTimekeepZ5 {
+    @apply border sticky top-0 px-[10px] py-[12px] bg-white z-[5] text-center;
+  }
+  .headerTableTimekeepZ5T46 {
+    @apply border sticky top-[46px] px-[10px] py-[12px] bg-white z-[5] text-center;
+  }
+  .cellTableTimekeepZ6 {
+    @apply border sticky top-0 left-0 px-[10px] py-[12px] z-[6] bg-white text-left;
+  }
+  .cellTableTimekeepNoIndex {
+    @apply border sticky top-0 px-[10px] py-[12px] text-center;
+  }
+  /* End Table Timekeep */
+}

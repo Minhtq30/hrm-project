@@ -1,0 +1,31 @@
+### Laravel ###
+back_end/vendor/
+back_end/node_modules/
+back_end/npm-debug.log
+back_end/yarn-error.log
+
+# Laravel 8
+back_end/storage
+
+back_end/storage/*.key
+back_end/.env
+back_end/Homestead.yaml
+back_end/Homestead.json
+back_end/.vagrant
+back_end/.phpunit.result.cache
+
+### Vuejs ###
+# Recommended template: Node.gitignore
+
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+*.lock
+.env
+.idea
+.vscode
+.DS_Store
+.browserslistrc
